@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #c4c3c3;
+    padding: 10px;
+}
+
+/* Estilos para el contenedor de entrada */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.input-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.input-group select, .input-group input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.input-group select:focus, .input-group input:focus {
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1400px;
+    height: 600px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.container1 {
+    width: 35%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-section {
+    flex: 1;
+    background-image: url(../imagenes/crear-una-constructora-guia-completa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.welcome-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.login-section {
+    flex: 1;
+    padding: 40px;
+}
+
+.login-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.login-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #666;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #1E2533;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #666;
+    margin-top: 30px;
+}
+
+.links a {
+    color: #6d5dfc;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+#logo{
+    width: 50%;
+    margin-left: 130px;
+}
+
+#regis_logo{
+    width: 60%;
+    margin-left: 90px;
+}
+
+/* Media Query para dispositivos pequeños */
+@media (max-width: 768px) {
+
+    body{
+        min-height: 90vh;
+    }
+
+    .container {
+        flex-direction: column; 
+        width: 90%; 
+        height: 70%;
+    }
+
+    .container1 {
+        flex-direction: column; 
+        width: 90%; 
+    }
+
+    .welcome-section {
+        order: -1; 
+        height: 200px; 
+        display: none; /* Ocultar imagen en pantallas pequeñas */
+    }
+
+    .login-section p {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+        .links{
+            margin-left: 30px;
+        }
+
+    .login-section {
+        padding: 20px; 
+    }
+
+    .welcome-section h1 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .login-section h2 {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    .login-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #logo{
+        display: block;
+        width: 60%;
+        margin-left: 55px;
+    }
+
+    #regis_logo{
+        width: 60%;
+        margin-left: 55px;
+    }
+}
